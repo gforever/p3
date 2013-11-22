@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Kaiju Creator</title>
+	
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/features.css" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	
+</head>
+
+
+<body>
+
+<div id='wrapper'>
+
+	<h1>Kaiju Creator</h1>
+
+	<!-- Left side with all the controls -->
+	<div id='controls'>
+		<!-- Name Your Kaiju -->	
+			<h2>Kaiju Name: </h2>
+            <input type='text' id='recipient' maxlength='14'>
+            <div id='recipient-error'>Max 14 characters</div>            	
+		<!-- Color picker -->
+			<h2>Pick a background color</h2>
+            <div class='colors' id='red'></div>
+            <div class='colors' id='orange'></div>
+            <div class='colors' id='blue'></div>
+            <div class='colors' id='green'></div>
+            <div class='colors' id='yellow'></div>
+            <div class='colors' id='purple'></div>
+            <div class='colors' id='white'></div>                                                
+			<br />					
+		<!-- Texture picture -->
+			<h2>Pick a texture or background image</h2>
+			<div class='textures' id='swirls'></div>
+   			<div class='textures' id='paper'></div>
+            <div class='textures' id='fire'></div>
+   			<div class='textures' id='water'></div>
+            <br />		
+		<!-- Message -->	
+		<!--	<h2>Pick a message</h2>
+            <input type ='radio' name='message' id='happy-birthday'>
+            <label for='happy-birthday'>Happy Birthday</label><br />
+            <input type ='radio' name='message' id='congratulations'>
+            <label for='congratulations'>Congratulations</label><br /> -->         	
+			
+		<!-- Kaiju Parts -->	
+            <h2>Select Kaiju Tail(s)</h2>
+            <img class='stickers' id="tail" src='images/tail/godzilla_tail.png'>
+            <img class='stickers' id="tail" src='images/tail/dest_tail.png'>
+            
+            <h2>Select Kaiju Wings</h2>
+            <img class='stickers' id="wing" src='images/wing/dest_lt_wing.png'>
+            <img class='stickers' id="wing" src='images/wing/dest_rt_wing.png'>            
+            
+            <h2>Select a Kaiju Body</h2>
+			<img class='stickers' id="body" src='images/body/godzilla_body.png'>
+			<img class='stickers' id="body" src='images/body/dest_body.png'>            
+            
+            <h2>Select Kaiju Head(s)</h2>
+            <img class='stickers' id="head" src='images/head/godzilla_head.png'>
+            <img class='stickers' id="head" src='images/head/dest_head.png'>
+			
+            <h2>Select Kaiju Arms</h2>
+            <img class='stickers' id="arm" src='images/arm/godzilla_lt_arm.png' >
+            <img class='stickers' id="arm2" src='images/arm/godzilla_rt_arm.png'>
+            <img class='stickers' id="arm" src='images/arm/dest_lt_arm.png'>
+            <img class='stickers' id="arm2" src='images/arm/dest_rt_arm.png'>
+                       
+            <h2>Select Kaiju Legs</h2>
+            <img class='stickers' id="leg" src='images/leg/godzilla_lt_leg.png'>
+            <img class='stickers' id="leg2" src='images/leg/godzilla_rt_leg.png'>
+            <img class='stickers' id="leg" src='images/leg/dest_lt_leg.png'>
+            <img class='stickers' id="leg2" src='images/leg/dest_rt_leg.png'>        
+			
+	</div>
+	
+	<!-- Right side with the live preview -->
+	<div id='preview'>
+	
+		<div id='card-background'>
+			<div id='canvas'>
+				<!--<div id='message-output'></div>-->
+				<div id='recipient-output'></div>
+			</div>
+		</div>
+		
+		<!-- Buttons -->
+		<input type='button' id='refresh-btn' value='Start over'>
+		<input type='button' id='print-btn' value='Save Kaiju Image'>
+	</div>
+	
+</div>
+
+<script src="js/kaiju_creator.js"></script>
+	
+</body>
+</html>

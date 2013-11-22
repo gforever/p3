@@ -1,0 +1,84 @@
+.colors{
+	width:40px;
+	height:40px;
+	border:1px solid grey;
+	float: left;
+}
+
+#red{
+	background-color:red;
+}
+
+#orange{
+	background-color:orange;
+}
+
+#blue{
+	background-color:blue;
+}
+
+#green{
+	background-color:green;
+}
+
+#yellow{
+	background-color:yellow;
+}
+
+#purple{
+	background-color:purple;
+}
+
+#white{
+	background-color:white;
+}
+
+.textures{
+    width:80px;
+	height:40px;
+	border:1px solid grey;
+	float:left;
+}
+
+#swirls {
+	background-image:url('../images/texture-swirls.png');
+}
+#paper {
+	background-image:url('../images/texture-paper.png');
+}
+#fire{
+	background-image:url('../images/fire.jpg');
+}
+#water{
+	background-image:url('../images/water.png');
+}
+
+#message-output {
+	position:absolute;
+	top:50px;
+	text-align:center;
+	font-size:30px;
+	width: 100%;
+}
+
+#recipient-output {
+	position:absolute;
+	/*top:100px; */
+	text-align:center;
+	font-size:30px;
+	width: 100%;
+}
+
+#recipient-error {
+	color:black;
+}
+.stickers_on_card {
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.stickers_on_cardA {
+	position: absolute;
+	top:0px;
+	left:0px;
+}
