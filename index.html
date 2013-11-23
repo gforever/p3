@@ -18,7 +18,10 @@
 <div id='wrapper'>
 
 	<h1>Kaiju Creator</h1>
-
+    <p>Welcome to the Kaiju Creator. Here you can build your own Kaiju with various Kaiju parts. Create your ultimate monster! Best Viewed in Full Screen.</p> 
+<p>Standard features: Click to clone and drag, clear canvas, change background, create name with length limitation, save image. <br />
+My Features: Drop cloned item to recycle bin, rotate clone, and set layer order. </p>
+    
 	<!-- Left side with all the controls -->
 	<div id='controls'>
 		<!-- Name Your Kaiju -->	
@@ -50,34 +53,26 @@
             <label for='congratulations'>Congratulations</label><br /> -->         	
 			
 		<!-- Kaiju Parts -->	
-            <h2>Select Kaiju Tail(s)</h2>
-            <img class='stickers' id="tail" src='images/tail/godzilla_tail.png'>
-            <img class='stickers' id="tail" src='images/tail/dest_tail.png'>
-            
-            <h2>Select Kaiju Wings</h2>
-            <img class='stickers' id="wing" src='images/wing/dest_lt_wing.png'>
-            <img class='stickers' id="wing" src='images/wing/dest_rt_wing.png'>            
-            
-            <h2>Select a Kaiju Body</h2>
-			<img class='stickers' id="body" src='images/body/godzilla_body.png'>
-			<img class='stickers' id="body" src='images/body/dest_body.png'>            
-            
-            <h2>Select Kaiju Head(s)</h2>
-            <img class='stickers' id="head" src='images/head/godzilla_head.png'>
-            <img class='stickers' id="head" src='images/head/dest_head.png'>
-			
-            <h2>Select Kaiju Arms</h2>
-            <img class='stickers' id="arm" src='images/arm/godzilla_lt_arm.png' >
-            <img class='stickers' id="arm2" src='images/arm/godzilla_rt_arm.png'>
-            <img class='stickers' id="arm" src='images/arm/dest_lt_arm.png'>
-            <img class='stickers' id="arm2" src='images/arm/dest_rt_arm.png'>
-                       
-            <h2>Select Kaiju Legs</h2>
-            <img class='stickers' id="leg" src='images/leg/godzilla_lt_leg.png'>
-            <img class='stickers' id="leg2" src='images/leg/godzilla_rt_leg.png'>
-            <img class='stickers' id="leg" src='images/leg/dest_lt_leg.png'>
-            <img class='stickers' id="leg2" src='images/leg/dest_rt_leg.png'>        
-			
+         <!-- Using multiple class where the second class assigns the stack order w/ Z-Indexof CSS to control layer order of the kaiju parts (ie Head is always on top, arms  on second level, legs on third level, body on fourth level, wings on fifth level, and tail at back-->
+		      
+                <h2>Select Kaiju Parts</h2>
+                <img class='stickers kHead kParts' src='images/head/godzilla_head.png'>
+                <img class='stickers kHead kParts' src='images/head/dest_head.png'> <br /> 
+                <img class='stickers kBody kParts' src='images/body/godzilla_body.png'>
+                <img class='stickers kBody kParts' src='images/body/dest_body.png'>  <br />
+                <img class='stickers kArm kParts' src='images/arm/godzilla_lt_arm.png' >
+                <img class='stickers kArm kParts' src='images/arm/godzilla_rt_arm.png'> 
+                <img class='stickers kArm kParts' src='images/arm/dest_lt_arm.png'>
+                <img class='stickers kArm kParts' src='images/arm/dest_rt_arm.png'> 
+                <img class='stickers kLeg kParts' src='images/leg/godzilla_lt_leg.png'>
+                <img class='stickers kLeg kParts' src='images/leg/godzilla_rt_leg.png'>
+                <img class='stickers kLeg kParts' src='images/leg/dest_lt_leg.png'>
+                <img class='stickers kLeg kParts' src='images/leg/dest_rt_leg.png'> 
+                <img class='stickers kTail kParts' src='images/tail/godzilla_tail.png'>
+                <img class='stickers kTail kParts' src='images/tail/dest_tail.png'> <br />
+                <img class='stickers kWing kParts' src='images/wing/dest_lt_wing.png'>
+                <img class='stickers kWing kParts' src='images/wing/dest_rt_wing.png'>  
+                 			
 	</div>
 	
 	<!-- Right side with the live preview -->
@@ -91,8 +86,8 @@
 		</div>
 		
 		<!-- Buttons -->
-		<input type='button' id='refresh-btn' value='Start over'>
-		<input type='button' id='print-btn' value='Save Kaiju Image'>
+		<input type='button' id='refresh-btn' value='Start Over'>
+		<input type='button' id='print-btn' value='Save Your Kaiju'>
 	</div>
 	
 </div>

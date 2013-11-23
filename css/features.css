@@ -72,13 +72,36 @@
 #recipient-error {
 	color:black;
 }
+
+.kParts{
+	width:10%;
+	height:10%;
+}
+
 .stickers_on_card {
 	position: absolute;
 	top:0px;
 	left:0px;
 }
-.stickers_on_cardA {
-	position: absolute;
-	top:0px;
-	left:0px;
+
+.kTail{
+	z-index:1;
+}
+
+.kWing {
+	z-index:20;
+}
+
+.kBody {
+	z-index:30;
+}
+
+.kLeg {
+	z-index:40;
+}
+.kArm {
+	z-index:50;
+}
+.kHead {
+	z-index:60;
 }

@@ -66,12 +66,12 @@ $('.stickers').click(function() {
 
 //Creates the class and only allow the stickers on the right to be draggable 
 	new_image.addClass('stickers_on_card'); 
+	new_image.removeClass('kParts'); 
 	
 	// Place the clone in the canvas
 	$('#canvas').append(new_image);
 
-	$('.stickers_on_card').draggable({});
-	//	$('.stickers_on_card').draggable({containment: "#canvas"});
+	$('.stickers_on_card').draggable({containment: "#canvas"});
 
 }); 
 

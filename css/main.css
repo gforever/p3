@@ -6,6 +6,10 @@ General
 	color:#333;
 }
 
+p{
+	text-align:center;
+}
+
 h1 {	
 	text-align:center;
 	font-size:30px;
@@ -95,14 +99,14 @@ input[type=button]:active {
 Layout
 -------------------------------------------------------------------------------------------------*/
 #wrapper {
-	/*width:960px;
-	margin:0px auto; */
+	/*width:960px;*/
+	margin:25px; 
 }
 
 /* Left column */
 #controls {
 	width:425px;
-	margin-right:50px; 
+/*	margin-right:50px; */ 
 	float:left;
 }
 
@@ -118,19 +122,19 @@ Layout
 Card
 -------------------------------------------------------------------------------------------------*/
 #card-background {
-	background-image:url('../images/card-background.jpg');
+	background-image:url('../images/canvas-background.jpg');
 	background-repeat:no-repeat;
-	height:513px;
-	width:369px;
+	height:600px; /*513px;*/
+	width:800px; /*369px;*/
 	margin:0px auto;
 }
 
 #canvas {
-	width:338px;
-	height:469px;
+	height:587px;/*469px;*/
+	width:791px; /*338px;*/
 	position:relative;
-	top:33px;
-	left:16px;
+	top:6px;/*33px;*/
+	left:4px; /*16px;*/
 	z-index:1; /* So we can place the stickers above */
 	overflow:hidden;
 }
