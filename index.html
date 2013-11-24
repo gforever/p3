@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="Andrew Wong" />
+	<meta name="keywords" content="CSCIE-15, javascript, jquery, design, css, cascading, style, sheets, xhtml, graphic design, w3c, web standards, visual, display" />
+	<meta name="description" content="A demonstration of Javascript & JQuery for CSCIE-15 at Harvard University: Extension School." />
+	<meta name="robots" content="all" />
 	<title>Kaiju Creator</title>
 	
 	<link rel="stylesheet" href="css/main.css" type="text/css">
@@ -19,8 +23,8 @@
 
 	<h1>Kaiju Creator</h1>
     <p>Welcome to the Kaiju Creator. Here you can build your own Kaiju with various Kaiju parts. Create your ultimate monster! Best Viewed in Full Screen.</p> 
-<p>Standard features: Click to clone and drag, clear canvas, change background, create name with length limitation, save image. <br />
-My Features: Drop cloned item to recycle bin, rotate clone, and set layer order. </p>
+<p>Instructions: Click to clone and drag, clear canvas with start over button, change background, create a name for your kaiju with length limitation, and save image. <br />
+Extra Features: Drop cloned item to recycle bin, rotate clone, and set layer order. </p>
     
 	<!-- Left side with all the controls -->
 	<div id='controls'>
@@ -40,10 +44,10 @@ My Features: Drop cloned item to recycle bin, rotate clone, and set layer order.
 			<br />					
 		<!-- Texture picture -->
 			<h2>Pick a texture or background image</h2>
-			<div class='textures' id='swirls'></div>
-   			<div class='textures' id='paper'></div>
-            <div class='textures' id='fire'></div>
-   			<div class='textures' id='water'></div>
+			<div class='textures' id='swirls'>SWIRLS</div>
+   			<div class='textures' id='paper'>PAPER</div>
+            <div class='textures' id='fire'>FIRE</div>
+   			<div class='textures' id='water'>UNDERWATER</div>
             <br />		
 		<!-- Message -->	
 		<!--	<h2>Pick a message</h2>
@@ -82,6 +86,7 @@ My Features: Drop cloned item to recycle bin, rotate clone, and set layer order.
 			<div id='canvas'>
 				<!--<div id='message-output'></div>-->
 				<div id='recipient-output'></div>
+                <div id='trash' class='addBack'><!--Drop here--></div>
 			</div>
 		</div>
 		

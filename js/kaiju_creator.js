@@ -71,18 +71,19 @@ $('.stickers').click(function() {
 	// Place the clone in the canvas
 	$('#canvas').append(new_image);
 
-	$('.stickers_on_card').draggable({containment: "#canvas"});
-
-}); 
-
-$('.stickers_on_card').click(function() {
-
-//var new_image = $(this).clone();
-alert('Entered');
-	//$(this).remove(); 
-	//new_image.addClass('stickers_on_card'); 
-
-	//$('#canvas').append(new_image);
+	$('.stickers_on_card').draggable(/*{containment: "#canvas"}*/);
+    $('#trash').droppable({
+		drop: function(event, ui){
+			$(ui.draggable).remove()
+			}  
+	});
+//TRYING TO HIGHLIGHT WHEN sticker over trash 
+    /*	
+	$('#trash').droppable({
+		 activeClass: "ui-state-highlight" 
+	});
+	$('#trash').droppable( "option", "activeClass", "ui-state-highlight" ); 
+    */
 }); 
 
 /*-------------------------------------------------------------------------------------------------
@@ -102,32 +103,34 @@ $( "#canvas" ).droppable(
 
 */
 	
-/*-------------------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------
 Start over
--------------------------------------------------------------------------------------------------*/
+------------------------------------------------------------------------------------------*/
 $('#refresh-btn').click(function() {
 	
 	// Reset color and texture
 	$('#canvas').css('background-color', 'white');
 	$('#canvas').css('background-image', '');
-	
+
 	// Clear message and recipient divs
 	$('#message-output').html("");
 	$('#recipient-output').html("");
 		
 	// Remove any stickers
 	$('.stickers_on_card').remove();
-
 });
 
 
-/*-------------------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------
 Print
--------------------------------------------------------------------------------------------------*/
+------------------------------------------------------------------------------------------*/
 $('#print-btn').click(function() {
 	
 	// Goal: Open the card in a new tab
-   
+    //Remove trash bin icon from printing
+    $('#trash').remove();
+	//$('#trash').css('background-image', '');
+  
     // Take the existing card on the page (in the #canvas div) and clone it for the new tab
     var canvas_clone = $('#canvas').clone();
         
@@ -181,6 +184,7 @@ $('#print-btn').click(function() {
     // Then close the tab. This isn't actually closing the tab, it's just closing JS's ability to talk to it.
     // It's kind of like when you're talking to a walkie-talkie and you say "over and out" to communicate you're done talking
     new_tab.document.close();
-    		
+
+//NEED TO ADD THE TRASH BIN BACK		
 });
 

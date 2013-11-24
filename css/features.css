@@ -36,8 +36,12 @@
 .textures{
     width:80px;
 	height:40px;
+	background-position:center;
 	border:1px solid grey;
+	cursor:pointer;
 	float:left;
+	line-height:40px;
+	text-align:center;
 }
 
 #swirls {
@@ -48,9 +52,12 @@
 }
 #fire{
 	background-image:url('../images/fire.jpg');
+	color:orange;
 }
 #water{
 	background-image:url('../images/water.png');
+	color:blue;
+	font-size:10px;
 }
 
 #message-output {
@@ -74,11 +81,13 @@
 }
 
 .kParts{
+	cursor:pointer;
 	width:10%;
 	height:10%;
 }
 
 .stickers_on_card {
+	cursor:move;
 	position: absolute;
 	top:0px;
 	left:0px;
