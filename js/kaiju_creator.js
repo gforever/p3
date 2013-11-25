@@ -72,7 +72,7 @@ $('.stickers').click(function() {
 	$('#canvas').append(new_image);
 
 	$('.stickers_on_card').draggable(/*{containment: "#canvas"}*/);
-    $('#trash').droppable({
+    $('.trash').droppable({
 		drop: function(event, ui){
 			$(ui.draggable).remove()
 			}  
@@ -128,9 +128,9 @@ $('#print-btn').click(function() {
 	
 	// Goal: Open the card in a new tab
     //Remove trash bin icon from printing
-    $('#trash').remove();
-	//$('#trash').css('background-image', '');
-  
+    //$('.trash').remove();
+	//$('#trash').css('display', 'none');
+    $('#can').addClass('hideDiv');
     // Take the existing card on the page (in the #canvas div) and clone it for the new tab
     var canvas_clone = $('#canvas').clone();
         
@@ -180,11 +180,15 @@ $('#print-btn').click(function() {
     
     // Here's the change we'll make: we'll write our card (i.e., new_tab_contents) to the document of the tab
     new_tab.document.write(new_tab_contents);
-    
+
+//NEED TO ADD THE TRASH BIN BACK	
+    $('#can').removeClass('hideDiv');    
+	
     // Then close the tab. This isn't actually closing the tab, it's just closing JS's ability to talk to it.
     // It's kind of like when you're talking to a walkie-talkie and you say "over and out" to communicate you're done talking
     new_tab.document.close();
 
-//NEED TO ADD THE TRASH BIN BACK		
+
 });
+
 

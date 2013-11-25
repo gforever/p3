@@ -139,7 +139,7 @@ Card
 	overflow:hidden;
 }
 
-#trash {
+#can.trash {
 	position:absolute;
     top:0px;
 	left:704px;
@@ -150,6 +150,12 @@ Card
 	background-position:center;
 	border:double;
 	border-color:green;
+	/*	visibility:visible; */
 	/*color: #fff;*/	
+
 }
 
+.hideDiv 
+{
+		display: none;
+}
