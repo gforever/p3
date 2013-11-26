@@ -1,35 +1,23 @@
-$('input[name=message]').click(function(){
-//	console.log("You clicked a message");
-	//var message =$(this).val();
-	//console.log(message);
-    // Get the label element that comes immediately after this radio button
-	var label = $(this).next();
-    // From the lablem element extract the inner HTML - i.e what is the message.
-	var message = label.html();
-	
-	//Place the message in the card
-	$('#message-output').html(message);
-	
-	//console.log(message);
-});
+$( document ).tooltip();
 
-$('#recipient').keyup(function(){
+
+$('#kName').keyup(function(){
 	//Find out what is in this field
 	var value = $(this).val();
 	
 	var how_many_characters = value.length;
 //	console.log(how_many_characters);
 
-	var how_many_left = 14 - how_many_characters;
+	var how_many_left = 15 - how_many_characters;
 	
 	if(how_many_left == 0){
-		$('#recipient-error').css('color','red');
+		$('#kName-error').css('color','red');
 	}	
 	else if(how_many_left < 5) {
-		$('#recipient-error').css('color','purple');
+		$('#kName-error').css('color','purple');
 	}
 	
-	$('#recipient-error').html('You have ' + how_many_left + ' characters left.');
+	$('#kName-error').html('You have ' + how_many_left + ' characters left.');
 	/*
     if(how_many_characters == 14) {
 		$('#recipient-error').html('You\'ve reached the max amount of characters');
@@ -39,7 +27,7 @@ $('#recipient').keyup(function(){
 	} */
 	
 	//Place the message in the card
-	$('#recipient-output').html(value);
+	$('#kName-output').html(value);
 });
 
 $('.colors').click(function(){
@@ -64,7 +52,7 @@ $('.stickers').click(function() {
 	// Clone whatever sticker was clicked
 	var new_image = $(this).clone();
 
-//Creates the class and only allow the stickers on the right to be draggable 
+	//Creates the class and only allow the stickers on the right to be draggable 
 	new_image.addClass('stickers_on_card'); 
 	new_image.removeClass('kParts'); 
 	
@@ -77,7 +65,7 @@ $('.stickers').click(function() {
 			$(ui.draggable).remove()
 			}  
 	});
-//TRYING TO HIGHLIGHT WHEN sticker over trash 
+	//TRYING TO HIGHLIGHT WHEN sticker over trash 
     /*	
 	$('#trash').droppable({
 		 activeClass: "ui-state-highlight" 
@@ -128,9 +116,8 @@ $('#print-btn').click(function() {
 	
 	// Goal: Open the card in a new tab
     //Remove trash bin icon from printing
-    //$('.trash').remove();
-	//$('#trash').css('display', 'none');
     $('#can').addClass('hideDiv');
+
     // Take the existing card on the page (in the #canvas div) and clone it for the new tab
     var canvas_clone = $('#canvas').clone();
         
@@ -181,7 +168,7 @@ $('#print-btn').click(function() {
     // Here's the change we'll make: we'll write our card (i.e., new_tab_contents) to the document of the tab
     new_tab.document.write(new_tab_contents);
 
-//NEED TO ADD THE TRASH BIN BACK	
+	//NEED TO ADD THE TRASH BIN BACK///////////////////////////////////////////////////////////////
     $('#can').removeClass('hideDiv');    
 	
     // Then close the tab. This isn't actually closing the tab, it's just closing JS's ability to talk to it.

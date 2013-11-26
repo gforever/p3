@@ -10,44 +10,45 @@
 	
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="css/features.css" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	
 </head>
 
-
 <body>
 
 <div id='wrapper'>
 
-	<h1>Kaiju Creator</h1>
+	<h1>KAIJU CREATOR</h1>
     <p>Welcome to the Kaiju Creator. Here you can build your own Kaiju with various Kaiju parts. Create your ultimate monster! Best Viewed in Full Screen.</p> 
-<p>Instructions: Click to clone and drag, clear canvas with start over button, change background, create a name for your kaiju with length limitation, and save image. <br />
-Extra Features: Drop cloned item to recycle bin, rotate clone, and set layer order. </p>
+	<p class="boldText">Instructions: </p>Select a background. You can choose various colors, textures, or a background image. Selecting a texture image allows you to change the background color as well whereas a background image will not be affected by the background color. <br />
+Click to clone the kaiju part onto the canvas. Drag the cloned , clear canvas with start over button, change background, create a name for your kaiju with length limitation, and save image.
+	<p class="boldText">Extra Features: </p><p>Drop cloned item to recycle bin, tooltip, resizing cloned parts, custom cursor icons. Save image without trash can icon and maintain droppable functionality. </p>
     
 	<!-- Left side with all the controls -->
 	<div id='controls'>
 		<!-- Name Your Kaiju -->	
-			<h2>Kaiju Name: </h2>
-            <input type='text' id='recipient' maxlength='14'>
-            <div id='recipient-error'>Max 14 characters</div>            	
+			<h2><label for="kName" title="Please enter the name of your Kaiju." >Kaiju Name: </label></h2>
+            <input type='text' id='kName' maxlength='15'>
+            <div id='kName-error'>Max 15 characters</div>            	
 		<!-- Color picker -->
-			<h2>Pick a background color</h2>
-            <div class='colors' id='red'></div>
-            <div class='colors' id='orange'></div>
-            <div class='colors' id='blue'></div>
-            <div class='colors' id='green'></div>
-            <div class='colors' id='yellow'></div>
-            <div class='colors' id='purple'></div>
-            <div class='colors' id='white'></div>                                                
+			<h2 title="Click on a color.">Pick a background color</h2>
+            <div class='colors' id='red' title="Red"></div>
+            <div class='colors' id='orange' title="Orange"></div>
+            <div class='colors' id='blue' title="Blue"></div>
+            <div class='colors' id='green' title="Green"></div>
+            <div class='colors' id='yellow' title="Yellow"></div>
+            <div class='colors' id='purple' title="Purple"></div>
+            <div class='colors' id='white' title="White"></div>                                                
 			<br />					
 		<!-- Texture picture -->
-			<h2>Pick a texture or background image</h2>
-			<div class='textures' id='crossover'>CROSSOVER</div>
-   			<div class='textures' id='explosion'>EXPLOSION</div>
-            <div class='textures' id='fire'>FIRE</div>
-   			<div class='textures' id='water'>UNDERWATER</div>
+			<h2 title="Click on an image.">Pick a texture or background image</h2>
+			<div class='textures' id='crossover' title="Crossfire">CROSSOVER</div>
+   			<div class='textures' id='explosion' title="Explosion">EXPLOSION</div>
+            <div class='textures' id='fire' title="Fire">FIRE</div>
+   			<div class='textures' id='water' title="Underwater">UNDERWATER</div>
             <br />		
 		<!-- Message -->	
 		<!--	<h2>Pick a message</h2>
@@ -59,40 +60,40 @@ Extra Features: Drop cloned item to recycle bin, rotate clone, and set layer ord
 		<!-- Kaiju Parts -->	
          <!-- Using multiple class where the second class assigns the stack order w/ Z-Indexof CSS to control layer order of the kaiju parts (ie Head is always on top, arms  on second level, legs on third level, body on fourth level, wings on fifth level, and tail at back-->
 		      
-                <h2>Select Kaiju Parts</h2>
-                <img class='stickers kHead kParts' src='images/head/godzilla_head.png'>
-                <img class='stickers kHead kParts' src='images/head/dest_head.png'> <br /> 
-                <img class='stickers kBody kParts' src='images/body/godzilla_body.png'>
-                <img class='stickers kBody kParts' src='images/body/dest_body.png'>  <br />
-                <img class='stickers kArm kParts' src='images/arm/godzilla_lt_arm.png' >
-                <img class='stickers kArm kParts' src='images/arm/godzilla_rt_arm.png'> 
-                <img class='stickers kArm kParts' src='images/arm/dest_lt_arm.png'>
-                <img class='stickers kArm kParts' src='images/arm/dest_rt_arm.png'> 
-                <img class='stickers kLeg kParts' src='images/leg/godzilla_lt_leg.png'>
-                <img class='stickers kLeg kParts' src='images/leg/godzilla_rt_leg.png'>
-                <img class='stickers kLeg kParts' src='images/leg/dest_lt_leg.png'>
-                <img class='stickers kLeg kParts' src='images/leg/dest_rt_leg.png'> 
-                <img class='stickers kTail kParts' src='images/tail/godzilla_tail.png'>
-                <img class='stickers kTail kParts' src='images/tail/dest_tail.png'> <br />
-                <img class='stickers kWing kParts' src='images/wing/dest_lt_wing.png'>
-                <img class='stickers kWing kParts' src='images/wing/dest_rt_wing.png'>  
+                <h2 title="Click to select a Kaiju Part. Then you can drag it in the canvas.">Select Kaiju Parts</h2>
+                <img class='stickers kHead kParts' src='images/head/godzilla_head.png' title="Godzilla head">
+                <img class='stickers kHead kParts' src='images/head/dest_head.png' title="Destoroyah head"> <br /> 
+                <img class='stickers kBody kParts' src='images/body/godzilla_body.png' title="Godzilla body">
+                <img class='stickers kBody kParts' src='images/body/dest_body.png' title="Destoroyah body">  <br />
+                <img class='stickers kArm kParts' src='images/arm/godzilla_lt_arm.png' title="Godzilla left arm">
+                <img class='stickers kArm kParts' src='images/arm/godzilla_rt_arm.png' title="Godzilla right arm"> 
+                <img class='stickers kArm kParts' src='images/arm/dest_lt_arm.png' title="Destoroyah left arm">
+                <img class='stickers kArm kParts' src='images/arm/dest_rt_arm.png' title="Destoroyah right arm"> 
+                <img class='stickers kLeg kParts' src='images/leg/godzilla_lt_leg.png' title="Godzilla left leg">
+                <img class='stickers kLeg kParts' src='images/leg/godzilla_rt_leg.png' title="Godzilla right leg">
+                <img class='stickers kLeg kParts' src='images/leg/dest_lt_leg.png' title="Destoroyah left leg">
+                <img class='stickers kLeg kParts' src='images/leg/dest_rt_leg.png' title="Destoroyah right leg"> 
+                <img class='stickers kTail kParts' src='images/tail/godzilla_tail.png' title="Godzilla tail">
+                <img class='stickers kTail kParts' src='images/tail/dest_tail.png' title="Destoroyah tail"> <br />
+                <img class='stickers kWing kParts' src='images/wing/dest_lt_wing.png' title="Destoroyah left wing">
+                <img class='stickers kWing kParts' src='images/wing/dest_rt_wing.png' title="Destoroyah right wing">  
                  			
 	</div>
 	
 	<!-- Right side with the live preview -->
 	<div id='preview'>
-	
+    
 		<div id='card-background'>
 			<div id='canvas'>
 				<!--<div id='message-output'></div>-->
-				<div id='recipient-output'></div>
-                <div id ='can' class='trash' ><!--Drop here--></div>
+				<div id='kName-output'></div>
+                <div id ='can' class='trash' title="Drag the center of your Kaiju Part to the trash"><!--Drop here--></div>
 			</div>
 		</div>
 		
 		<!-- Buttons -->
-		<input type='button' id='refresh-btn' value='Start Over'>
-		<input type='button' id='print-btn' value='Save Your Kaiju'>
+		<input type='button' id='refresh-btn' value='Start Over' title="Click to clear your canvas.">
+		<input type='button' id='print-btn' value='Save Your Kaiju' title="Click to taske a snap shot of your work and open a new window to save your creation.">
 	</div>
 	
 </div>

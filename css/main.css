@@ -7,7 +7,7 @@ General
 }
 
 p{
-	text-align:center;
+	text-align:left;
 }
 
 h1 {	
@@ -116,6 +116,9 @@ Layout
 	float:left;
 	text-align:center;
 }
+.boldText{
+	font-weight:bold;
+}
 
 
 /*-------------------------------------------------------------------------------------------------
@@ -150,6 +153,7 @@ Card
 	background-position:center;
 	border:double;
 	border-color:green;
+	cursor:crosshair;
 	/*	visibility:visible; */
 	/*color: #fff;*/	
 
