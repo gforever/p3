@@ -144,8 +144,8 @@ Card
 
 #can.trash {
 	position:absolute;
-    top:0px;
-	left:704px;
+    top:10px;
+	left:695px;
 	width:80px;
 	height:80px;
 	background-image:url(../images/trash.png);
@@ -153,7 +153,7 @@ Card
 	background-position:center;
 	border:double;
 	border-color:green;
-	cursor:crosshair;
+	cursor:help;
 	/*	visibility:visible; */
 	/*color: #fff;*/	
 
