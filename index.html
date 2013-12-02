@@ -28,9 +28,9 @@
 	  <li>Select a background. You can choose various colors, textures, or a background image. 
 	    You can combine the texture and background color to create a unique combination. A background image will not be affected by the background color.     
       </li>
-	  <li>Click to clone the kaiju part onto the canvas. In the canvas, you can drag the cloned part to build your kaiju.	    </li>
+	  <li>Click to clone the kaiju part onto the canvas. In the canvas, you can drag the cloned part to build your kaiju. </li>
 	  <li>When you are finished, you can output your kaiju to a new image in a new window that can be saved. </li>
-	  <li>You also have the option of starting over by clearing    the canvas. </li>
+	  <li>You also have the option of starting over by clearing the canvas. </li>
   </ul>
   <p class="boldText">Extra Features: </p>
     <ul>
@@ -45,8 +45,8 @@
 <div id='controls'>
 		<!-- Name Your Kaiju -->	
 			<h2 title="Please enter a name.">Kaiju Name: 
-<input type='text' id='kName' maxlength='15'></h2>
-            <div id='kName-error'>Max 15 characters</div>            	
+			<input type='text' id='kName' maxlength='25'></h2>
+            <div id='kName-error'>Max 25 characters</div>            	
 		<!-- Color picker -->
 			<h2 title="Click on a color.">Pick a background color</h2>
             <div class='colors' id='red' title="Red"></div>
@@ -72,7 +72,7 @@
                 <img class='stickers kHead kParts' src='images/head/godzilla_head.png' title="Godzilla head">
                 <img class='stickers kHead kParts' src='images/head/spaceg_head.png' title="Space Godzilla head">
                 <img class='stickers kHead kParts' src='images/head/mg_head.png' title="Mecha-Godzilla head">
-                <img class='stickers kHead kParts' src='images/head/Rodan_head.png' title="Rodan head">
+                <img class='stickers kHead kParts' src='images/head/rodan_head.png' title="Rodan head">
                 <img class='stickers kHead kParts' src='images/head/dest_head.png' title="Destoroyah head">
                 <img class='stickers kHead kParts' src='images/head/kg_head1.png' title="King Ghidorah middle head">
                 <img class='stickers kHead kParts' src='images/head/kg_head2.png' title="King Ghidorah left head">                                
@@ -131,12 +131,13 @@
 				<!--<div id='message-output'></div>-->
 				<div id='kName-output'></div>
                 <div id ='can' class='trash' title="Drag the center of your Kaiju Part to the trash"><!--Drop here--></div>
+                <div id='myKaiju'></div>
 			</div>
 		</div>
 		
 		<!-- Buttons -->
 		<input type='button' id='refresh-btn' value='Start Over' title="Click to clear your canvas.">
-		<input type='button' id='print-btn' value='Save Your Kaiju' title="Click to take a snap shot of your work and open a new window where you can save your creation.">
+		<input type='button' id='print-btn' value='Print Your Kaiju' title="Click to take a snap shot of your work and open a new window where you can print your creation.">
 	</div>
 	
 </div>
