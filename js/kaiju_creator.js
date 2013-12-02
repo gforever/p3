@@ -60,7 +60,7 @@ $('.stickers').click(function() {
 	$('#canvas').append(new_image);
 
 	$('.stickers_on_canvas').resizable().draggable();
-  /*$('.stickers_on_canvas').draggable(/*{containment: "#canvas"}* /  ); DRAGGBLE WORKS BUT CANNOT DUE RESIZE*/
+  /*$('.stickers_on_canvas').draggable(/*{containment: "#canvas"}* /  ); Draggable wokrs BUT when adding resizable(), dragging no longer produces the desired results*/
 	
     $('.trash').droppable({
 		drop: function(event, ui){
