@@ -59,9 +59,10 @@ $('.stickers').click(function() {
 	// Place the clone in the canvas
 	$('#canvas').append(new_image);
 
-	$('.stickers_on_canvas').resizable().draggable();
-  /*$('.stickers_on_canvas').draggable(/*{containment: "#canvas"}* /  ); Draggable wokrs BUT when adding resizable(), dragging no longer produces the desired results*/
-	
+	$('.stickers_on_canvas').draggable().resizable();
+  /*$('.stickers_on_canvas').draggable(/*{containment: "#canvas"}* /  ); DRAGGBLE WORKS BUT CANNOT DUE RESIZE*/
+
+	//Allows item to be dropped when on top of trash can. 
     $('.trash').droppable({
 		drop: function(event, ui){
 			$(ui.draggable).remove()
@@ -173,7 +174,7 @@ $('#print-btn').click(function() {
 
 	//NEED TO ADD THE TRASH BIN BACK TO THE APP///////////////////////////////////////////////////////////////
     $('#can').removeClass('hideDiv');    
-	
+	//$('.stickers_on_canvas').css('cursor', 'move');
     // Then close the tab. This isn't actually closing the tab, it's just closing JS's ability to talk to it.
     // It's kind of like when you're talking to a walkie-talkie and you say "over and out" to communicate you're done talking
     new_tab.document.close();

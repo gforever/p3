@@ -2,7 +2,7 @@ label {
 	display: inline-block;
 	width: 5em;
 }
-.colors{
+.colors {
 	width:40px;
 	height:40px;
 	border:1px solid grey;
@@ -10,35 +10,21 @@ label {
 	cursor:pointer;
 }
 
-#red{
-	background-color:red;
-}
+#red {background-color:red;}
 
-#orange{
-	background-color:orange;
-}
+#orange {background-color:orange;}
 
-#blue{
-	background-color:blue;
-}
+#blue {background-color:blue;}
 
-#green{
-	background-color:green;
-}
+#green {background-color:green;}
 
-#yellow{
-	background-color:yellow;
-}
+#yellow {background-color:yellow;}
 
-#purple{
-	background-color:purple;
-}
+#purple {background-color:purple;}
 
-#white{
-	background-color:white;
-}
+#white {background-color:white;}
 
-.textures{
+.textures {
     width:80px;
 	height:40px;
 	background-position:center;
@@ -62,11 +48,11 @@ label {
 	font-weight:bold;
 	font-family:Verdana, Geneva, sans-serif;
 }
-#fire{
+#fire {
 	background-image:url('../images/fire.jpg');
 	color:orange;
 }
-#water{
+#water {
 	background-image:url('../images/water.png');
 	color:white;
 	font-size:10px;
@@ -93,10 +79,11 @@ label {
 	color:black;
 }
 
-.kParts{
+.kParts {
 	cursor:pointer;
-	width:8%;
-	height:8%;
+	/*width:8%; 
+	height:8%;*/
+	float:left;
 }
 
 .stickers_on_canvas {
@@ -107,24 +94,34 @@ label {
 	z-index:1;
 }
 
-.kTail{
-	z-index:10;
-}
+.kTail {z-index:10;}
+.kWing {z-index:20;}
+.kBody {z-index:30;}
+.kLeg {z-index:40;}
+.kArm {z-index:50;}
+.kHead {z-index:60;}
 
-.kWing {
-	z-index:20;
-}
+.gHead{width:29px; height:47px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/godzilla_head.png');}
+.sGHead{width:32px; height:51px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/spaceg_head.png');}
+.mGHead{width:38px; height:72px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/mg_head.png');}
+.rHead{width:25px; height:64px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/rodan_head.png');}
+.dHead{width:73px; height:65px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/dest_head.png');}
+.kGHead1{width:27px; height:89px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/kg_head1.png');}
+.kGHead2{width:44px; height:77px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/kg_head2.png');}
+.kGHead3{width:48px; height:83px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/kg_head3.png');}
 
-.kBody {
-	z-index:30;
-}
+.gBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/godzilla_body.png');}
+.sGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/spaceg_body.png');}
+.mGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/mg_body.png');}
+.rBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/rodan_body.png');}
+.dBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/dest_body.png');}
+.kGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/kg_body.png');}
 
-.kLeg {
-	z-index:40;
-}
-.kArm {
-	z-index:50;
-}
-.kHead {
-	z-index:60;
-}
+.gArm1{width:32px; height:45px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/godzilla_lt_arm.png');}
+.gArm2{width:35px; height:45px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/godzilla_rt_arm.png');}
+.sGArm1{width:44px; height:100px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/spaceg_lt_arm.png');}
+.sGArm2{width:46px; height:100px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/spaceg_rt_arm.png');}
+.mGArm1{width:46px; height:102px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/mg_lt_arm.png');}
+.mGArm2{width:48px; height:104px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/mg_rt_arm.png');}
+.dArm1{width:48px; height:69px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/dest_lt_arm.png');}
+.dArm2{width:50px; height:72px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/dest_rt_arm.png');}

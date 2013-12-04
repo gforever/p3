@@ -21,7 +21,7 @@
 
 <div id='wrapper'>
 
-	<h1>KAIJU CREATOR - TESTING RESIZABLE</h1>
+	<h1>KAIJU CREATOR</h1>
     <p>Welcome to the Kaiju Creator. Here you can build your own Kaiju with various Kaiju parts. Create your ultimate kaiju! Best Viewed in Full Screen.</p> 
 	<p class="boldText">Instructions: </p>
 	<ul>
@@ -69,30 +69,31 @@
          <!-- Using multiple class where the second class assigns the stack order with Z-Indexof CSS to control layer order of the kaiju parts (ie Head is always on top, arms  on second level, legs on third level, body on fourth level, wings on fifth level, and tail at back-->
 		      
                 <h2 title="Click to select a Kaiju Part. Then you can drag it in the canvas.">Select Kaiju Parts</h2>
-                <img class='stickers kHead kParts' src='images/head/godzilla_head.png' title="Godzilla head">
-                <img class='stickers kHead kParts' src='images/head/spaceg_head.png' title="Space Godzilla head">
-                <img class='stickers kHead kParts' src='images/head/mg_head.png' title="Mecha-Godzilla head">
-                <img class='stickers kHead kParts' src='images/head/rodan_head.png' title="Rodan head">
-                <img class='stickers kHead kParts' src='images/head/dest_head.png' title="Destoroyah head">
-                <img class='stickers kHead kParts' src='images/head/kg_head1.png' title="King Ghidorah middle head">
-                <img class='stickers kHead kParts' src='images/head/kg_head2.png' title="King Ghidorah left head">                                
-                <img class='stickers kHead kParts' src='images/head/kg_head3.png' title="King Ghidorah right head">
-                <br /> 
-                <img class='stickers kBody kParts' src='images/body/godzilla_body.png' title="Godzilla body">
-                <img class='stickers kBody kParts' src='images/body/spaceg_body.png' title="Space Godzilla body">
-                <img class='stickers kBody kParts' src='images/body/mg_body.png' title="Mecha-Godzilla body">                
-                <img class='stickers kBody kParts' src='images/body/rodan_body.png' title="Rodan body">                
-                <img class='stickers kBody kParts' src='images/body/dest_body.png' title="Destoroyah body">
-                <img class='stickers kBody kParts' src='images/body/kg_body.png' title="King Ghidorah body">                
+                
+                <div class='stickers kHead gHead kParts' title="Godzilla head"></div>                
+                <div class='stickers kHead sGHead kParts' title="Space Godzilla head"></div>
+                <div class='stickers kHead mGHead kParts' title="Mecha-Godzilla head"></div>
+                <div class='stickers kHead rHead kParts' title="Rodan head"></div>
+                <div class='stickers kHead dHead kParts' title="Destoroyah head"></div>
+                <div class='stickers kHead kGHead1 kParts' title="King Ghidorah middle head"></div>
+                <div class='stickers kHead kGHead2 kParts' title="King Ghidorah left head"></div>                             
+                <div class='stickers kHead kGHead3 kParts' title="King Ghidorah right head"></div>
                 <br />
-                <img class='stickers kArm kParts' src='images/arm/godzilla_lt_arm.png' title="Godzilla left arm">
-                <img class='stickers kArm kParts' src='images/arm/godzilla_rt_arm.png' title="Godzilla right arm"> 
-                <img class='stickers kArm kParts' src='images/arm/spaceg_lt_arm.png' title="Space Godzilla left arm">
-                <img class='stickers kArm kParts' src='images/arm/spaceg_rt_arm.png' title="Space Godzilla right arm"> 
-                <img class='stickers kArm kParts' src='images/arm/mg_lt_arm.png' title="Mecha-Godzilla left arm">
-                <img class='stickers kArm kParts' src='images/arm/mg_rt_arm.png' title="Mecha-Godzilla right arm">                 
-                <img class='stickers kArm kParts' src='images/arm/dest_lt_arm.png' title="Destoroyah left arm">
-                <img class='stickers kArm kParts' src='images/arm/dest_rt_arm.png' title="Destoroyah right arm"> 
+                <div class='stickers kBody gBody kParts' title="Godzilla body"></div>
+                <div class='stickers kBody sGBody kParts' title="Space Godzilla body"></div>
+                <div class='stickers kBody mGBody kParts' title="Mecha-Godzilla body"></div>                
+                <div class='stickers kBody rBody kParts' title="Rodan body"></div>             
+                <div class='stickers kBody dBody kParts' title="Destoroyah body"></div>
+                <div class='stickers kBody kGBody kParts' title="King Ghidorah body"></div>               
+                <br />
+                <div class='stickers kArm gArm1 kParts' title="Godzilla left arm"></div> 
+                <div class='stickers kArm gArm2 kParts' title="Godzilla right arm"></div> 
+                <div class='stickers kArm sGArm1 kParts' title="Space Godzilla left arm"></div> 
+                <div class='stickers kArm sGArm2 kParts' title="Space Godzilla right arm"></div> 
+                <div class='stickers kArm mGArm1 kParts' title="Mecha-Godzilla left arm"></div> 
+                <div class='stickers kArm mGArm2 kParts' title="Mecha-Godzilla right arm"></div>                  
+                <div class='stickers kArm dArm1 kParts' title="Destoroyah left arm"></div> 
+                <div class='stickers kArm dArm2 kParts' title="Destoroyah right arm"></div> 
 				<br />                
                 <img class='stickers kLeg kParts' src='images/leg/godzilla_lt_leg.png' title="Godzilla left leg">
                 <img class='stickers kLeg kParts' src='images/leg/godzilla_rt_leg.png' title="Godzilla right leg">
