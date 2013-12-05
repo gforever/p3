@@ -85,6 +85,7 @@ label {
 	height:8%;*/
 	float:left;
 }
+.containerdivNewLine { clear: both; float: left; display: block; position: relative; }
 
 .stickers_on_canvas {
 	cursor:move;
@@ -111,11 +112,11 @@ label {
 .kGHead3{width:48px; height:83px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/head/kg_head3.png');}
 
 .gBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/godzilla_body.png');}
-.sGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/spaceg_body.png');}
-.mGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/mg_body.png');}
-.rBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/rodan_body.png');}
-.dBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/dest_body.png');}
-.kGBody{width:57px; height:141px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/kg_body.png');}
+.sGBody{width:76px; height:178px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/spaceg_body.png');}
+.mGBody{width:78px; height:174px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/mg_body.png');}
+.rBody{width:52px; height:78px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/rodan_body.png');}
+.dBody{width:57px; height:148px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/dest_body.png');}
+.kGBody{width:52px; height:102px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/body/kg_body.png');}
 
 .gArm1{width:32px; height:45px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/godzilla_lt_arm.png');}
 .gArm2{width:35px; height:45px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/godzilla_rt_arm.png');}
@@ -125,3 +126,32 @@ label {
 .mGArm2{width:48px; height:104px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/mg_rt_arm.png');}
 .dArm1{width:48px; height:69px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/dest_lt_arm.png');}
 .dArm2{width:50px; height:72px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/arm/dest_rt_arm.png');}
+
+.gLeg1{width:65px; height:114px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/godzilla_lt_leg.png');}
+.gLeg2{width:61px; height:110px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/godzilla_rt_leg.png');}
+.sGLeg1{width:70px; height:127px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/spaceg_lt_leg.png');}
+.sGLeg2{width:67px; height:125px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/spaceg_rt_leg.png');}
+.mgLeg1{width:71px; height:139px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/mg_lt_leg.png');}
+.mgLeg2{width:73px; height:139px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/mg_rt_leg.png');}
+.rLeg1{width:43px; height:76px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/rodan_lt_leg.png');}
+.rLeg2{width:43px; height:75px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/rodan_rt_leg.png');}
+.dLeg1{width:71px; height:105px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/dest_lt_leg.png');}
+.dLeg2{width:68px; height:104px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/dest_rt_leg.png');}
+.kGLeg1{width:45px; height:65px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/kg_lt_leg.png');}
+.kGLeg2{width:45px; height:65px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/leg/kg_rt_leg.png');}
+
+.gTail{width:53px; height:149px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/godzilla_tail.png');}
+.sGTail{width:52px; height:145px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/spaceg_tail.png');}
+.mGTail{width:79px; height:107px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/mg_tail.png');}
+.rTail{width:65px; height:45px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/rodan_tail.png');}
+.dTail{width:121px; height:90px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/dest_tail.png');}
+.kGTail1{width:17px; height:41px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/kg1_tail.png');}
+.kGTail2{width:17px; height:49px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/tail/kg2_tail.png');}
+
+.dWing1{width:180px; height:163px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/dest_lt_wing.png');}
+.dWing2{width:179px; height:165px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/dest_rt_wing.png');}
+.rWing1{width:202px; height:140px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/rodan_lt_wing.png');}
+.rWing2{width:200px; height:132px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/rodan_rt_wing.png');}
+.kGWing1{width:146px; height:166px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/kg_lt_wing.png');}
+.kGWing2{width:146px; height:168px; background-size:contain; background-repeat:no-repeat; background-image:url('../images/wing/kg_rt_wing.png');}
+
