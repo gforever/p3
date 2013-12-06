@@ -85,17 +85,18 @@ label {
 	height:8%;*/
 	float:left;
 }
-.containerdivNewLine { clear: both; float: left; display: block; position: relative; }
+.containerdivNewLine { clear: both; float: left; display: block; }
 
 .stickers_on_canvas {
 	cursor:move;
+	position:absolute;
 	top:0px;
 	left:0px;
 	display:inline-block;
 	z-index:1;
 }
 
-.kTail {z-index:10;}
+.kTail {z-index:10; }
 .kWing {z-index:20;}
 .kBody {z-index:30;}
 .kLeg {z-index:40;}
