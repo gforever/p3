@@ -8,7 +8,7 @@ $('#kName').keyup(function(){
 	var how_many_characters = value.length;
 	//console.log(how_many_characters);
 
-	var how_many_left = 20 - how_many_characters;
+	var how_many_left = 25 - how_many_characters;
 	
 	if(how_many_left == 0){
 		$('#kName-error').css('color','red');
